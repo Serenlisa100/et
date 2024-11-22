@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: GraphikETRADE, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.813rem;
+  color: rgb(36, 36, 36);
+}
+.before-log-on{
+  display: none;
+}
+.js-before-log-on .before-log-on{
+  display: initial;
+}
+.js-before-log-on .log-on-page{
+  display: none;
+}
+.container-fluid {
+  max-width: 1200px;
+  padding: 0;
+  width: 98%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+nav img {
+  height: 40px;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.bi-list {
+  font-size: 2rem;
+  position: absolute;
+  display: none;
+}
+.list-con {
+  width: 84%;
+  /* border: 1px solid black; */
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.bi-three-dots {
+  display: none;
+}
+@media (max-width: 1200px) {
+  nav ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1000px) {
+  .knowledge {
+    display: none;
+  }
+  nav img {
+    height: 35px;
+  }
+  .bi-three-dots {
+    display: initial;
+  }
+  .account-logon {
+   margin-top: 1em;
+  }
+}
+@media (max-width: 890px) {
+  .pricing {
+    display: none;
+  }
+  nav img {
+    height: 30px;
+  }
+  form {
+    font-size: 0.9rem;
+  }
+}
+
+.top span,
+.top i,
+.bi-eye-fill,
+.bi-info-circle,
+.bi-list {
+  color: rgb(86, 39, 216);
+}
+.top .stock-plan {
+  margin-left: 0.7em;
+}
+.navbar-nav .nav-link {
+  font-size: 0.81rem;
+  font-weight: 500;
+  color: rgb(36, 36, 36);
+  margin-right: 2.2em;
+}
+.bi-search,
+.bi-three-dots,
+.bi-list {
+  -webkit-text-stroke: 1px;
+}
+.container {
+  width: 95%;
+  max-width: 410px;
+  padding: 0;
+}
+
+.content {
+  margin-top: 5em;
+}
+.account-logon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4em;
+}
+#wgtmsr {
+  width: 47%;
+  padding: 6px;
+}
+
+#wgtmsr option {
+  width: 100px;
+}
+.log-on-btn {
+  width: 47%;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgb(86, 39, 216);
+  color: white;
+  border: none;
+  padding: 4px;
+}
+.input {
+  width: 100%;
+  padding: 6px 12px;
+  margin-bottom: 1.4em;
+  border: 1px solid rgb(148, 148, 148);
+}
+#togglePassword{
+  cursor: pointer;
+  color: rgb(86, 39, 216);
+}
+.check input {
+  height: 17px;
+  width: 17px;
+}
+.bottom a {
+  text-decoration: none;
+  color: rgb(86, 39, 216);
+}
+
+@media (max-width: 767px) {
+  .input {
+    padding: 12px;
+  }
+  .list-con {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+  .top span,
+  .top i {
+    display: none;
+  }
+  .img-con {
+    padding-top: 1em;
+  }
+  nav img {
+    height: 25px;
+  }
+  .bi-list {
+    display: initial;
+  }
+  .container {
+    max-width: 767px;
+  }
+
+  .account-logon {
+    flex-direction: column;
+    padding-right: 0.2em;
+  }
+  #wgtmsr {
+    width: 100%;
+    padding: 0.85em;
+  }
+  .log-on-btn {
+    width: 100%;
+    padding: 0.85em;
+    margin-top: 1em;
+  }
+  .check{
+    margin-bottom: 1em;
+  }
+  .check input {
+    height: 24px;
+    width: 24px;
+  }
+}
+.js-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em 1em 0 1em;
+}
+
+.js-x-lg{
+  background-color: transparent;
+  border: none;
+}
+.js-x-lg:hover{
+  border: 1px solid rgb(86, 39, 216);
+}
+
+.bi-x-lg,
+.js-bi-search,.bi-chevron-right {
+    -webkit-text-stroke: 1px;
+}
+.bi-x-lg,.js-bi-search{
+    color: rgb(86, 39, 216);
+    font-size: 1.3rem;
+}
+
+.bi-x-lg {
+    font-size: 2rem;
+}
+
+.js-lists {
+    list-style: none;
+    padding: 0;
+}
+
+.js-lists li {
+    padding: 1em 2em;
+    border-bottom: 1px solid rgb(228, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.js-lists a {
+    font-size: .95rem;
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+}
+@media (min-width:768px) {
+  .js-before-log-on .before-log-on{
+    display: none;
+  }
+  .js-before-log-on .log-on-page{
+    display: initial;
+  }
+}
